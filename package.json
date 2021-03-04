@@ -1,0 +1,35 @@
+{
+  "name": "vonage-deploy",
+  "version": "1.0.0",
+  "description": "simple relayed video project",
+  "main": "index.js",
+  "author": "dmitryc@globalcloudteam.com",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "node ./build/index.js",
+    "build:dev": "webpack --watch",
+    "start:dev": "nodemon ./build/index.js",
+    "dev": "run-p build:dev start:dev"
+  },
+  "engines": {
+    "node": ">=12.x",
+    "npm": ">=6.x"
+  },
+  "dependencies": {
+    "@babel/core": "7.13.8",
+    "@babel/preset-env": "7.13.9",
+    "@babel/plugin-proposal-class-properties": "7.13.0",
+    "@babel/plugin-transform-runtime": "7.13.9",
+    "babel-loader": "8.2.2",
+    "copy-webpack-plugin": "6.4.1",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "nodemon": "2.0.7",
+    "npm-run-all": "4.1.5",
+    "opentok": "2.11.0",
+    "webpack": "4.46.0",
+    "webpack-cli": "4.5.0",
+    "ws": "7.4.3"
+  }
+}
